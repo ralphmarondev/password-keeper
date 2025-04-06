@@ -8,7 +8,7 @@ const router = createRouter({
 
 router.beforeEach((to, _from, next) => {
   if (to.meta.title) {
-    document.title = (to.meta.title as string) || 'CodeStream'
+    document.title = (to.meta.title as string) || 'Password Keeper'
   }
 
   next()
