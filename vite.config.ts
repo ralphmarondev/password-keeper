@@ -6,7 +6,7 @@ import { resolve } from 'path'
 export default defineConfig(({ mode }) => {
   return {
     plugins: [vue()],
-    base: mode === 'production' ? '' : '',
+    base: mode === 'production' ? '' : '/password-keeper/',
     resolve: {
       alias: {
         '@': resolve(__dirname, 'src'),
